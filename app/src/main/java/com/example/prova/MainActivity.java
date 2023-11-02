@@ -21,6 +21,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //evento = (Button) findViewById(R.id.Button);
+        int risultato = 0;
+
+        number1 = (EditText) findViewById(R.id.Numero1);
+        number2 = (EditText) findViewById(R.id.Numero2);
+        txtResult =
+
+        final Button button = findViewById(R.id.BottoneSomma);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Code here executes on main thread after user presses button
+
+            }
+        });
+
     }
+
 }
