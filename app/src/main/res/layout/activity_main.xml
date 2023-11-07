@@ -29,24 +29,24 @@
         app:layout_constraintTop_toBottomOf="@+id/Numero1" />
 
     <Button
-        android:id="@+id/BottoneDifferenza"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.711"
-        app:layout_constraintStart_toEndOf="@+id/BottoneSomma"
-        app:layout_constraintTop_toBottomOf="@+id/Numero2" />
-
-    <Button
         android:id="@+id/BottoneSomma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:layout_marginEnd="20dp"
         android:text="somma"
-        app:layout_constraintEnd_toStartOf="@+id/BottoneDifferenza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.711"
+        app:layout_constraintStart_toEndOf="@+id/BottoneDifferenza"
+        app:layout_constraintTop_toBottomOf="@+id/Numero2" />
+
+    <Button
+        android:id="@+id/BottoneDifferenza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:text="differenza"
+        app:layout_constraintEnd_toStartOf="@+id/BottoneSomma"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Numero2" />
 
@@ -54,9 +54,9 @@
         android:id="@+id/Risultato"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
