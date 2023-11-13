@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        final Button button = findViewById(R.id.BottoneSomma);
-        button.setOnClickListener(new View.OnClickListener() {
+        final Button buttonSomma = findViewById(R.id.BottoneSomma);
+        buttonSomma.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Code here executes on main thread after user presses button
                 String strNum1 = number1.getText().toString();
@@ -43,6 +43,21 @@ public class MainActivity extends AppCompatActivity {
                 txtResult.setText(strStr);
             }
         });
+
+        final Button buttonDifferenza = findViewById(R.id.BottoneDifferenza);
+        buttonDifferenza.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Code here executes on main thread after user presses button
+                String strNum1 = number1.getText().toString();
+                String strNum2 = number2.getText().toString();
+                int n1 = Integer.parseInt(strNum1);
+                int n2 = Integer.parseInt(strNum2);
+                int res = n1 - n2;
+                String strStr = String.valueOf(res);
+                txtResult.setText(strStr);
+            }
+        });
+
 
     }
 
