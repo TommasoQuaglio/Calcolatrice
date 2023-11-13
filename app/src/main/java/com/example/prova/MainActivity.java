@@ -11,7 +11,6 @@ import android.widget.QuickContactBadge;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    private Button btnCalcola;
     private EditText number1;
     private EditText number2;
     private TextView txtResult;
@@ -22,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        int risultato = 0;
 
         number1 = (EditText) findViewById(R.id.Numero1);
         number2 = (EditText) findViewById(R.id.Numero2);
