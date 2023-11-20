@@ -10,7 +10,7 @@
         android:id="@+id/Numero2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:autofillHints="0"
         android:ems="10"
         android:inputType="number"
@@ -23,19 +23,29 @@
         android:id="@+id/BottoneDifferenza"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="44dp"
         android:text="differenza"
         android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/BottoneSomma"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Numero2" />
 
+    <Button
+        android:id="@+id/BottoneMoltiplicazione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="moltiplicazione"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/BottoneDivisione"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BottoneDifferenza" />
+
     <EditText
         android:id="@+id/Numero1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="36dp"
         android:autofillHints="0"
         android:backgroundTint="#000000"
         android:ems="10"
@@ -49,13 +59,24 @@
         android:id="@+id/BottoneSomma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="44dp"
         android:text="somma"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.711"
         app:layout_constraintStart_toEndOf="@+id/BottoneDifferenza"
         app:layout_constraintTop_toBottomOf="@+id/Numero2" />
+
+    <Button
+        android:id="@+id/BottoneDivisione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="divisione"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/BottoneMoltiplicazione"
+        app:layout_constraintTop_toBottomOf="@+id/BottoneSomma" />
 
     <TextView
         android:id="@+id/Risultato"
@@ -67,7 +88,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.65" />
+        app:layout_constraintVertical_bias="0.569" />
 
     <TextView
         android:id="@+id/textView3"
@@ -80,6 +101,6 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.555" />
+        app:layout_constraintVertical_bias="0.475" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
