@@ -50,6 +50,29 @@ public class MainActivity extends AppCompatActivity {
             txtResult.setText(strStr);
         });
 
+        final Button buttonMoltiplicazione = findViewById(R.id.BottoneMoltiplicazione);
+        buttonMoltiplicazione.setOnClickListener(v -> {
+            // Code here executes on main thread after user presses button
+            String strNum1 = number1.getText().toString();
+            String strNum2 = number2.getText().toString();
+            int n1 = Integer.parseInt(strNum1);
+            int n2 = Integer.parseInt(strNum2);
+            int res = n1 * n2;
+            String strStr = String.valueOf(res);
+            txtResult.setText(strStr);
+        });
+
+        final Button buttonDivisione = findViewById(R.id.BottoneDivisione);
+        buttonDivisione.setOnClickListener(v -> {
+            // Code here executes on main thread after user presses button
+            String strNum1 = number1.getText().toString();
+            String strNum2 = number2.getText().toString();
+            int n1 = Integer.parseInt(strNum1);
+            int n2 = Integer.parseInt(strNum2);
+            int res = n1 / n2;
+            String strStr = String.valueOf(res);
+            txtResult.setText(strStr);
+        });
     }
 
 }
